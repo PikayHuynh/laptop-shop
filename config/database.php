@@ -9,9 +9,6 @@ try {
     $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
     $conn = new PDO($dsn, $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    ?>
-        <div>Kết nối thành công<div/>
-    <?php
 } catch (PDOException $e) {
     ?>
         <div>Kết nối thất bại<div/>
