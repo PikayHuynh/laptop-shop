@@ -10,7 +10,5 @@ try {
     $conn = new PDO($dsn, $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    ?>
-        <div>Kết nối thất bại<div/>
-    <?php
+    die("Database connection failed: " . $e->getMessage());
 }
