@@ -10,22 +10,24 @@
 
     <!-- Bootstrap -->
     <!-- <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/> -->
-
-    <link type="text/css" rel="stylesheet" href="../../resource/client/template/css/bootstrap.min.css"/>
+    <?php
+    require_once __DIR__ . '/../../../config/config.php';
+    ?>
+    <link type="text/css" rel="stylesheet" href="<?php echo asset_url('client/template/css/bootstrap.min.css'); ?>"/>
 
 
     <!-- Slick -->
-    <link type="text/css" rel="stylesheet" href="../../resource/client/template/css/slick.css"/>
-    <link type="text/css" rel="stylesheet" href="../../resource/client/template/css/slick-theme.css"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo asset_url('client/template/css/slick.css'); ?>"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo asset_url('client/template/css/slick-theme.css'); ?>"/>
 
     <!-- nouislider -->
-    <link type="text/css" rel="stylesheet" href="../../resource/client/template/css/nouislider.min.css"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo asset_url('client/template/css/nouislider.min.css'); ?>"/>
 
     <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="../../resource/client/template/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo asset_url('client/template/css/font-awesome.min.css'); ?>">
 
     <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="../../resource/client/template/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="<?php echo asset_url('client/template/css/style.css'); ?>"/>
 
 </head>
 <body>
@@ -57,7 +59,7 @@
                     <div class="col-md-3">
                         <div class="header-logo">
                             <a href="#" class="logo">
-                                <img src="./img/logo.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/logo.png'); ?>" alt="">
                             </a>
                         </div>
                     </div>
@@ -103,7 +105,7 @@
                                     <div class="cart-list">
                                         <div class="product-widget">
                                             <div class="product-img">
-                                                <img src="./img/product01.png" alt="">
+                                                <img src="<?php echo asset_url('client/template/img/product01.png'); ?>" alt="">
                                             </div>
                                             <div class="product-body">
                                                 <h3 class="product-name"><a href="#">product name goes here</a></h3>
@@ -114,7 +116,7 @@
 
                                         <div class="product-widget">
                                             <div class="product-img">
-                                                <img src="./img/product02.png" alt="">
+                                                <img src="<?php echo asset_url('client/template/img/product02.png'); ?>" alt="">
                                             </div>
                                             <div class="product-body">
                                                 <h3 class="product-name"><a href="#">product name goes here</a></h3>

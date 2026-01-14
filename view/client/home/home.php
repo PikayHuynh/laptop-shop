@@ -1,4 +1,5 @@
 <?php
+    require_once __DIR__ . '/../../../config/config.php';
     include __DIR__ . '/../layout/header.php';
 ?>
 
@@ -59,7 +60,7 @@
                                 <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="../../resource/client/template/img/product01.png" alt="">
+                                        <img src="<?php echo asset_url('client/template/img/product01.png'); ?>" alt="">
                                         <div class="product-label">
                                             <span class="sale">-30%</span>
                                             <span class="new">NEW</span>
@@ -91,7 +92,7 @@
                                 <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="./img/product02.png" alt="">
+                                        <img src="<?php echo asset_url('client/template/img/product02.png'); ?>" alt="">
                                         <div class="product-label">
                                             <span class="new">NEW</span>
                                         </div>
@@ -122,7 +123,7 @@
                                 <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="./img/product03.png" alt="">
+                                        <img src="<?php echo asset_url('client/template/img/product03.png'); ?>" alt="">
                                         <div class="product-label">
                                             <span class="sale">-30%</span>
                                         </div>
@@ -148,7 +149,7 @@
                                 <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="./img/product04.png" alt="">
+                                        <img src="<?php echo asset_url('client/template/img/product04.png'); ?>" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
@@ -176,7 +177,7 @@
                                 <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="./img/product05.png" alt="">
+                                        <img src="<?php echo asset_url('client/template/img/product05.png'); ?>" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
@@ -234,7 +235,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="../../resource/client/template/img/product07.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product07.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -247,7 +248,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product08.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product08.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -260,7 +261,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product09.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product09.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -275,7 +276,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product01.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product01.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -288,7 +289,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product02.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product02.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -301,7 +302,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product03.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product03.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -327,7 +328,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product04.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product04.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -340,7 +341,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product05.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product05.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -353,7 +354,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product06.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product06.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -368,7 +369,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product07.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product07.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -381,7 +382,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product08.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product08.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -394,7 +395,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product09.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product09.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -422,7 +423,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product01.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product01.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -435,7 +436,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product02.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product02.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -448,7 +449,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product03.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product03.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -463,7 +464,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product04.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product04.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -476,7 +477,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product05.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product05.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
@@ -489,7 +490,7 @@
                         <!-- product widget -->
                         <div class="product-widget">
                             <div class="product-img">
-                                <img src="./img/product06.png" alt="">
+                                <img src="<?php echo asset_url('client/template/img/product06.png'); ?>" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>

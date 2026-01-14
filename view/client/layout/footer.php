@@ -95,11 +95,14 @@
     <!-- /FOOTER -->
 
     <!-- jQuery Plugins -->
-    <script src="../../resource/client/template/js/jquery.min.js"></script>
-    <script src="../../resource/client/template/js/bootstrap.min.js"></script>
-    <script src="../../resource/client/template/js/slick.min.js"></script>
-    <script src="../../resource/client/template/js/nouislider.min.js"></script>
-    <script src="../../resource/client/template/js/jquery.zoom.min.js"></script>
-    <script src="../../resource/client/template/js/main.js"></script>
+    <?php
+    require_once __DIR__ . '/../../../config/config.php';
+    ?>
+    <script src="<?php echo asset_url('client/template/js/jquery.min.js'); ?>"></script>
+    <script src="<?php echo asset_url('client/template/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo asset_url('client/template/js/slick.min.js'); ?>"></script>
+    <script src="<?php echo asset_url('client/template/js/nouislider.min.js'); ?>"></script>
+    <script src="<?php echo asset_url('client/template/js/jquery.zoom.min.js'); ?>"></script>
+    <script src="<?php echo asset_url('client/template/js/main.js'); ?>"></script>
 </body>
 </html>

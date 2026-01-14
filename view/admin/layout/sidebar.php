@@ -141,7 +141,10 @@
     <div class="sidebar-footer">
         <a href="##" class="sidebar-user">
             <span class="sidebar-user-img">
-                <picture><source srcset="./img/avatar/avatar-illustrated-01.webp" type="image/webp"><img src="./img/avatar/avatar-illustrated-01.png" alt="User name"></picture>
+                <?php
+                require_once __DIR__ . '/../../../config/config.php';
+                ?>
+                <picture><source srcset="<?php echo asset_url('admin/template/img/avatar/avatar-illustrated-01.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/avatar/avatar-illustrated-01.png'); ?>" alt="User name"></picture>
             </span>
             <div class="sidebar-user-info">
                 <span class="sidebar-user__title">Nafisa Sh.</span>

@@ -78,7 +78,10 @@
             <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
             <span class="sr-only">My profile</span>
             <span class="nav-user-img">
-                <picture><source srcset="./img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="./img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
+                <?php
+                require_once __DIR__ . '/../../../config/config.php';
+                ?>
+                <picture><source srcset="<?php echo asset_url('admin/template/img/avatar/avatar-illustrated-02.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/avatar/avatar-illustrated-02.png'); ?>" alt="User name"></picture>
             </span>
             </button>
             <ul class="users-item-dropdown nav-user-dropdown dropdown">

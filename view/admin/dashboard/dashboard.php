@@ -1,4 +1,5 @@
 <?php
+    require_once __DIR__ . '/../../../config/config.php';
     include __DIR__ . '/../layout/header.php';
 ?>
 
@@ -111,7 +112,7 @@
                     <label class="users-table__checkbox">
                     <input type="checkbox" class="check">
                     <div class="categories-table-img">
-                        <picture><source srcset="./img/categories/01.webp" type="image/webp"><img src="./img/categories/01.jpg" alt="category"></picture>
+                        <picture><source srcset="<?php echo asset_url('admin/template/img/categories/01.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/categories/01.jpg'); ?>" alt="category"></picture>
                     </div>
                     </label>
                 </td>
@@ -120,7 +121,7 @@
                 </td>
                 <td>
                     <div class="pages-table-img">
-                    <picture><source srcset="./img/avatar/avatar-face-04.webp" type="image/webp"><img src="./img/avatar/avatar-face-04.png" alt="User Name"></picture>
+                    <picture><source srcset="<?php echo asset_url('admin/template/img/avatar/avatar-face-04.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/avatar/avatar-face-04.png'); ?>" alt="User Name"></picture>
                     Jenny Wilson
                     </div>
                 </td>
@@ -145,7 +146,7 @@
                     <label class="users-table__checkbox">
                     <input type="checkbox" class="check">
                     <div class="categories-table-img">
-                        <picture><source srcset="./img/categories/02.webp" type="image/webp"><img src="./img/categories/02.jpg" alt="category"></picture>
+                        <picture><source srcset="<?php echo asset_url('admin/template/img/categories/02.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/categories/02.jpg'); ?>" alt="category"></picture>
                     </div>
                     </label>
                 </td>
@@ -154,7 +155,7 @@
                 </td>
                 <td>
                     <div class="pages-table-img">
-                    <picture><source srcset="./img/avatar/avatar-face-03.webp" type="image/webp"><img src="./img/avatar/avatar-face-03.png" alt="User Name"></picture>
+                    <picture><source srcset="<?php echo asset_url('admin/template/img/avatar/avatar-face-03.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/avatar/avatar-face-03.png'); ?>" alt="User Name"></picture>
                     Annette Black
                     </div>
                 </td>
@@ -179,7 +180,7 @@
                     <label class="users-table__checkbox">
                     <input type="checkbox" class="check">
                     <div class="categories-table-img">
-                        <picture><source srcset="./img/categories/03.webp" type="image/webp"><img src="./img/categories/03.jpg" alt="category"></picture>
+                        <picture><source srcset="<?php echo asset_url('admin/template/img/categories/03.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/categories/03.jpg'); ?>" alt="category"></picture>
                     </div>
                     </label>
                 </td>
@@ -188,7 +189,7 @@
                 </td>
                 <td>
                     <div class="pages-table-img">
-                    <picture><source srcset="./img/avatar/avatar-face-02.webp" type="image/webp"><img src="./img/avatar/avatar-face-02.png" alt="User Name"></picture>
+                    <picture><source srcset="<?php echo asset_url('admin/template/img/avatar/avatar-face-02.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/avatar/avatar-face-02.png'); ?>" alt="User Name"></picture>
                     Kathryn Murphy
                     </div>
                 </td>
@@ -213,7 +214,7 @@
                     <label class="users-table__checkbox">
                     <input type="checkbox" class="check">
                     <div class="categories-table-img">
-                        <picture><source srcset="./img/categories/04.webp" type="image/webp"><img src="./img/categories/04.jpg" alt="category"></picture>
+                        <picture><source srcset="<?php echo asset_url('admin/template/img/categories/04.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/categories/04.jpg'); ?>" alt="category"></picture>
                     </div>
                     </label>
                 </td>
@@ -222,7 +223,7 @@
                 </td>
                 <td>
                     <div class="pages-table-img">
-                    <picture><source srcset="./img/avatar/avatar-face-05.webp" type="image/webp"><img src="./img/avatar/avatar-face-05.png" alt="User Name"></picture>
+                    <picture><source srcset="<?php echo asset_url('admin/template/img/avatar/avatar-face-05.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/avatar/avatar-face-05.png'); ?>" alt="User Name"></picture>
                     Guy Hawkins
                     </div>
                 </td>
@@ -247,7 +248,7 @@
                     <label class="users-table__checkbox">
                     <input type="checkbox" class="check">
                     <div class="categories-table-img">
-                        <picture><source srcset="./img/categories/01.webp" type="image/webp"><img src="./img/categories/01.jpg" alt="category"></picture>
+                        <picture><source srcset="<?php echo asset_url('admin/template/img/categories/01.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/categories/01.jpg'); ?>" alt="category"></picture>
                     </div>
                     </label>
                 </td>
@@ -256,7 +257,7 @@
                 </td>
                 <td>
                     <div class="pages-table-img">
-                    <picture><source srcset="./img/avatar/avatar-face-03.webp" type="image/webp"><img src="./img/avatar/avatar-face-03.png" alt="User Name"></picture>
+                    <picture><source srcset="<?php echo asset_url('admin/template/img/avatar/avatar-face-03.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/avatar/avatar-face-03.png'); ?>" alt="User Name"></picture>
                     Robert Fox
                     </div>
                 </td>
@@ -281,7 +282,7 @@
                     <label class="users-table__checkbox">
                     <input type="checkbox" class="check">
                     <div class="categories-table-img">
-                        <picture><source srcset="./img/categories/03.webp" type="image/webp"><img src="./img/categories/03.jpg" alt="category"></picture>
+                        <picture><source srcset="<?php echo asset_url('admin/template/img/categories/03.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/categories/03.jpg'); ?>" alt="category"></picture>
                     </div>
                     </label>
                 </td>
@@ -290,7 +291,7 @@
                 </td>
                 <td>
                     <div class="pages-table-img">
-                    <picture><source srcset="./img/avatar/avatar-face-03.webp" type="image/webp"><img src="./img/avatar/avatar-face-03.png" alt="User Name"></picture>
+                    <picture><source srcset="<?php echo asset_url('admin/template/img/avatar/avatar-face-03.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/avatar/avatar-face-03.png'); ?>" alt="User Name"></picture>
                     Robert Fox
                     </div>
                 </td>
@@ -319,7 +320,7 @@
             <canvas id="customersChart" aria-label="Customers statistics" role="img"></canvas>
             <!--              <p class="customers__title">New Customers <span>+958</span></p>
             <p class="customers__date">28 Daily Avg.</p>
-            <picture><source srcset="./img/svg/customers.svg" type="image/webp"><img src="./img/svg/customers.svg" alt=""></picture> -->
+            <picture><source srcset="<?php echo asset_url('admin/template/img/svg/customers.svg'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/svg/customers.svg'); ?>" alt=""></picture> -->
         </article>
         <article class="white-block">
             <div class="top-cat-title">

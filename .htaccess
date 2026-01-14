@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Set the base path for the application
+RewriteBase /laptop_shop/
+
+# If the requested file or directory exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect all other requests to index.php
+RewriteRule ^(.*)$ index.php [QSA,L]

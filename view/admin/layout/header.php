@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaptopShop Admin</title>
+    <?php
+    require_once __DIR__ . '/../../../config/config.php';
+    ?>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../../resource/admin/template/img/svg/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo asset_url('admin/template/img/svg/logo.svg'); ?>" type="image/x-icon">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="../../resource/admin/template/css/style.min.css">
+    <link rel="stylesheet" href="<?php echo asset_url('admin/template/css/style.min.css'); ?>">
 </head>
 
 <body>
