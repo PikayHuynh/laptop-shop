@@ -3,6 +3,9 @@
 // Include config
 require_once __DIR__ . '/../config/config.php';
 
+// Include database connection
+require_once __DIR__ . '/../config/database.php';
+
 class Controller {
     /**
      * Get the base URL for the application

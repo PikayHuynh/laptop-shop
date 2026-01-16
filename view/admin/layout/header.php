@@ -13,6 +13,9 @@
     <link rel="shortcut icon" href="<?php echo asset_url('admin/template/img/svg/logo.svg'); ?>" type="image/x-icon">
     <!-- Custom styles -->
     <link rel="stylesheet" href="<?php echo asset_url('admin/template/css/style.min.css'); ?>">
+
+    <link rel="stylesheet" href="<?php echo asset_url('admin/css/style.css'); ?>">
+    
 </head>
 
 <body>
