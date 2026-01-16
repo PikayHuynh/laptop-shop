@@ -1,104 +1,91 @@
-<div class="main-wrapper">
-<nav class="main-nav--bg">
-    <div class="container main-nav">
-        <div class="main-nav-start">
-        <div class="search-wrapper">
-            <i data-feather="search" aria-hidden="true"></i>
-            <input type="text" placeholder="Enter keywords ..." required>
-        </div>
-        </div>
-        <div class="main-nav-end">
-        <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
-            <span class="sr-only">Toggle menu</span>
-            <span class="icon menu-toggle--gray" aria-hidden="true"></span>
-        </button>
-        <div class="lang-switcher-wrapper">
-            <button class="lang-switcher transparent-btn" type="button">
-            EN
-            <i data-feather="chevron-down" aria-hidden="true"></i>
-            </button>
-            <ul class="lang-menu dropdown">
-            <li><a href="##">English</a></li>
-            <li><a href="##">French</a></li>
-            <li><a href="##">Uzbek</a></li>
-            </ul>
-        </div>
-        <button class="theme-switcher gray-circle-btn" type="button" title="Switch theme">
-            <span class="sr-only">Switch theme</span>
-            <i class="sun-icon" data-feather="sun" aria-hidden="true"></i>
-            <i class="moon-icon" data-feather="moon" aria-hidden="true"></i>
-        </button>
-        <div class="notification-wrapper">
-            <button class="gray-circle-btn dropdown-btn" title="To messages" type="button">
-            <span class="sr-only">To messages</span>
-            <span class="icon notification active" aria-hidden="true"></span>
-            </button>
-            <ul class="users-item-dropdown notification-dropdown dropdown">
-            <li>
-                <a href="##">
-                <div class="notification-dropdown-icon info">
-                    <i data-feather="check"></i>
-                </div>
-                <div class="notification-dropdown-text">
-                    <span class="notification-dropdown__title">System just updated</span>
-                    <span class="notification-dropdown__subtitle">The system has been successfully upgraded. Read more
-                    here.</span>
-                </div>
+<!-- Content Start -->
+<div class="content">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+        <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+            <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+        </a>
+        <a href="#" class="sidebar-toggler flex-shrink-0">
+            <i class="fa fa-bars"></i>
+        </a>
+        <form class="d-none d-md-flex ms-4">
+            <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+        </form>
+        <div class="navbar-nav align-items-center ms-auto">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fa fa-envelope me-lg-2"></i>
+                    <span class="d-none d-lg-inline-flex">Message</span>
                 </a>
-            </li>
-            <li>
-                <a href="##">
-                <div class="notification-dropdown-icon danger">
-                    <i data-feather="info" aria-hidden="true"></i>
+                <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                    <a href="#" class="dropdown-item">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <div class="ms-2">
+                                <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                <small>15 minutes ago</small>
+                            </div>
+                        </div>
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <div class="ms-2">
+                                <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                <small>15 minutes ago</small>
+                            </div>
+                        </div>
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <div class="ms-2">
+                                <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                <small>15 minutes ago</small>
+                            </div>
+                        </div>
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item text-center">See all message</a>
                 </div>
-                <div class="notification-dropdown-text">
-                    <span class="notification-dropdown__title">The cache is full!</span>
-                    <span class="notification-dropdown__subtitle">Unnecessary caches take up a lot of memory space and
-                    interfere ...</span>
-                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fa fa-bell me-lg-2"></i>
+                    <span class="d-none d-lg-inline-flex">Notificatin</span>
                 </a>
-            </li>
-            <li>
-                <a href="##">
-                <div class="notification-dropdown-icon info">
-                    <i data-feather="check" aria-hidden="true"></i>
+                <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                    <a href="#" class="dropdown-item">
+                        <h6 class="fw-normal mb-0">Profile updated</h6>
+                        <small>15 minutes ago</small>
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item">
+                        <h6 class="fw-normal mb-0">New user added</h6>
+                        <small>15 minutes ago</small>
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item">
+                        <h6 class="fw-normal mb-0">Password changed</h6>
+                        <small>15 minutes ago</small>
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item text-center">See all notifications</a>
                 </div>
-                <div class="notification-dropdown-text">
-                    <span class="notification-dropdown__title">New Subscriber here!</span>
-                    <span class="notification-dropdown__subtitle">A new subscriber has subscribed.</span>
-                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                    <span class="d-none d-lg-inline-flex">John Doe</span>
                 </a>
-            </li>
-            <li>
-                <a class="link-to-page" href="##">Go to Notifications page</a>
-            </li>
-            </ul>
+                <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                    <a href="#" class="dropdown-item">My Profile</a>
+                    <a href="#" class="dropdown-item">Settings</a>
+                    <a href="#" class="dropdown-item">Log Out</a>
+                </div>
+            </div>
         </div>
-        <div class="nav-user-wrapper">
-            <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
-            <span class="sr-only">My profile</span>
-            <span class="nav-user-img">
-                <?php
-                require_once __DIR__ . '/../../../config/config.php';
-                ?>
-                <picture><source srcset="<?php echo asset_url('admin/template/img/avatar/avatar-illustrated-02.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/avatar/avatar-illustrated-02.png'); ?>" alt="User name"></picture>
-            </span>
-            </button>
-            <ul class="users-item-dropdown nav-user-dropdown dropdown">
-            <li><a href="##">
-                <i data-feather="user" aria-hidden="true"></i>
-                <span>Profile</span>
-                </a></li>
-            <li><a href="##">
-                <i data-feather="settings" aria-hidden="true"></i>
-                <span>Account settings</span>
-                </a></li>
-            <li><a class="danger" href="##">
-                <i data-feather="log-out" aria-hidden="true"></i>
-                <span>Log out</span>
-                </a></li>
-            </ul>
-        </div>
-        </div>
-    </div>
-</nav>
+    </nav>
+    <!-- Navbar End -->

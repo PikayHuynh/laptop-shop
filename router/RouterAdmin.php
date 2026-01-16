@@ -7,7 +7,7 @@ class RouterAdmin {
      */
     public static function register($router) {
         // Admin dashboard
-        $router->addRoute('admin', 'admin\AdminController', 'index');
+        $router->addRoute('admin', 'admin\DashboardController', 'index');
         
         // User management routes
         $router->addRoute('admin/users', 'admin\UserController', 'listUsers');

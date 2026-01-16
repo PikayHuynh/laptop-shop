@@ -11,17 +11,15 @@ include __DIR__ . '/../layout/sidebar.php';
 include __DIR__ . '/../layout/main-header.php';
 ?>
 
-<main class="main users chart-page" id="skip-target">
-    <div class="container">
-        <div class="row">
-            <div class="col-10">
-                <h2 class="main-title">Users Management</h2>
-            </div>
-            <div class="col-2">
-                <a href="<?php echo $baseUrl; ?>/admin/add-user" class="primary-default-btn">
-                    <i class="feather icon-plus"></i> Add New User
-                </a>
-            </div>
+<div class="bg-secondary rounded h-100 p-4">
+    <div class="row my-4">
+        <div class="col-10">
+            <h2 class="main-title">Users Management</h2>
+        </div>
+        <div class="col-2">
+            <a href="<?php echo BASE_URL; ?>admin/add-user" class="btn btn-outline-primary m-2">
+                <i class="feather icon-plus"></i> Add New User
+            </a>
         </div>
         
 
@@ -38,21 +36,14 @@ include __DIR__ . '/../layout/main-header.php';
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         <?php endif; ?>
-
-        <div class="users-table table-wrapper">
-            <table class="posts-table">
+        <table class="table table-hover text-center align-middle">
             <thead>
-                <tr class="users-table-info">
-                <th>
-                    <label class="users-table__checkbox ms-20">
-                    <input type="checkbox" class="check-all">Thumbnail
-                    </label>
-                </th>
-                <th>ID</th>
-                <th>Email</th>
-                <th>Full Name</th>
-                <th>Role</th>
-                <th>Action</th>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -60,33 +51,17 @@ include __DIR__ . '/../layout/main-header.php';
                     <?php if (!empty($users)): ?>
                         <?php foreach ($users as $user): ?>
                             <tr>
-                                <td>
-                                    <label class="users-table__checkbox">
-                                    <input type="checkbox" class="check">
-                                    <div class="categories-table-img">
-                                        <picture><source srcset="<?php echo asset_url('admin/template/img/categories/01.webp'); ?>" type="image/webp"><img src="<?php echo asset_url('admin/template/img/categories/01.jpg'); ?>" alt="category"></picture>
-                                    </div>
-                                    </label>
-                                </td>
                                 <td><?php echo $user['user_id']; ?></td>
                                 <td><?php echo htmlspecialchars($user['email']); ?></td>
                                 <td><?php echo htmlspecialchars($user['full_name']); ?></td>
                                 <td>
-                                    <span class="badge bg-info text-dark">
+                                    <span class="<?php echo $user['role_name'] == 'ADMIN' ? 'p-1 mb-1 bg-danger text-white rounded-pill' : "p-1 mb-1 bg-success text-white rounded-pill" ?>">
                                         <?php echo htmlspecialchars($user['role_name']); ?>
                                     </span>
                                 </td>
                                 <td>
-                                    <span class="p-relative">
-                                    <button class="dropdown-btn transparent-btn" type="button" title="More info">
-                                        <div class="sr-only">More info</div>
-                                        <i data-feather="more-horizontal" aria-hidden="true"></i>
-                                    </button>
-                                    <ul class="users-item-dropdown dropdown">
-                                        <li><a href="<?php echo $baseUrl; ?>/admin/edit-user?id=<?php echo $user['user_id']; ?>">Edit</a></li>
-                                        <li><a href="<?php echo $baseUrl; ?>/admin/delete-user?id=<?php echo $user['user_id'] ?>">Delete</a></li>
-                                    </ul>
-                                    </span>
+                                    <a class="btn btn-outline-warning m-2" href="<?php echo BASE_URL; ?>admin/edit-user?id=<?php echo $user['user_id']; ?>">Edit</a>
+                                    <a class="btn btn-outline-danger m-2" href="<?php echo BASE_URL; ?>admin/delete-user?id=<?php echo $user['user_id'] ?>">Delete</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -97,10 +72,9 @@ include __DIR__ . '/../layout/main-header.php';
                     <?php endif; ?>
                 </tr>
             </tbody>
-            </table>
-        </div>
+        </table>
     </div>
-</main>
+</div>
 
 <?php
 include __DIR__ . '/../layout/main-footer.php';
