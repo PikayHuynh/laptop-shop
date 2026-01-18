@@ -14,4 +14,5 @@ class Factory extends Model {
     public function getByName($name) {
         return $this->findOneBy('name', $name);
     }
+
 }
