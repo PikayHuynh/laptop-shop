@@ -25,5 +25,14 @@ class RouterAdmin {
         $router->addRoute('admin/edit-factory', 'admin\FactoryController', 'editFactory');
         $router->addRoute('admin/update-factory', 'admin\FactoryController', 'updateFactory');
         $router->addRoute('admin/delete-factory', 'admin\FactoryController', 'deleteFactory');
+
+
+        // Role management routes
+        $router->addRoute('admin/roles', 'admin\RoleController', 'listRoles');
+        $router->addRoute('admin/add-role', 'admin\RoleController', 'addRole');
+        $router->addRoute('admin/create-role', 'admin\RoleController', 'createRole');
+        $router->addRoute('admin/edit-role', 'admin\RoleController', 'editRole');
+        $router->addRoute('admin/update-role', 'admin\RoleController', 'updateRole');
+        $router->addRoute('admin/delete-role', 'admin\RoleController', 'deleteRole');
     }
 }

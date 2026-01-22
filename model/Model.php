@@ -93,6 +93,31 @@ class Model {
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         return $stmt->execute();
     }
+
+    /**
+     * Delete multiple records by list of ids
+     * @param array $list
+     * @return bool
+     */
+    public function deleteAll(array $list) {
+        if (empty($list)) {
+            return false;
+        }
+
+        $ids = array_column($list, $this->primaryKey);
+
+        if (empty($ids)) {
+            return false;
+        }
+
+        $placeholders = implode(',', array_fill(0, count($ids), '?'));
+        $sql = "DELETE FROM {$this->table}
+                WHERE {$this->primaryKey} IN ($placeholders)";
+
+        $stmt = $this->conn->prepare($sql);
+        return $stmt->execute($ids);
+    }
+
     
     /**
      * Find records by a specific column

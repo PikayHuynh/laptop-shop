@@ -55,4 +55,29 @@ class User extends Model {
         }
         return parent::update($id, $data);
     }
+
+    /**
+     * Get users by role name
+     * @param string $roleName
+     * @return array
+     */
+    public function getByRoleName($roleName) {
+        if (!$roleName) {
+            return [];
+        }
+
+        $sql = "
+            SELECT u.*
+            FROM {$this->table} u
+            JOIN roles r ON u.role_id = r.role_id
+            WHERE r.name = :role_name
+        ";
+
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([
+            'role_name' => $roleName
+        ]);
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
