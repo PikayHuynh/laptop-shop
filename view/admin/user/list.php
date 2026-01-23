@@ -60,6 +60,7 @@ include __DIR__ . '/../layout/main-header.php';
                                     </span>
                                 </td>
                                 <td>
+                                    <a class="btn btn-outline-success m-2" href="<?php echo BASE_URL; ?>admin/show-user?id=<?php echo $user['user_id']; ?>">Show</a>
                                     <a class="btn btn-outline-warning m-2" href="<?php echo BASE_URL; ?>admin/edit-user?id=<?php echo $user['user_id']; ?>">Edit</a>
                                     <a class="btn btn-outline-danger m-2" href="<?php echo BASE_URL; ?>admin/delete-user?id=<?php echo $user['user_id'] ?>">Delete</a>
                                 </td>

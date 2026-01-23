@@ -52,6 +52,7 @@ include __DIR__ . '/../layout/main-header.php';
                                 <td><?php echo $factory['factory_id']; ?></td>
                                 <td><?php echo htmlspecialchars($factory['name']); ?></td>
                                 <td>
+                                    <a class="btn btn-outline-success m-2" href="<?php echo BASE_URL; ?>admin/show-factory?id=<?php echo $factory['factory_id']; ?>">Show</a>
                                     <a class="btn btn-outline-warning m-2" href="<?php echo BASE_URL; ?>admin/edit-factory?id=<?php echo $factory['factory_id']; ?>">Edit</a>
                                     <a class="btn btn-outline-danger m-2" href="<?php echo BASE_URL; ?>admin/delete-factory?id=<?php echo $factory['factory_id'] ?>">Delete</a>
                                 </td>

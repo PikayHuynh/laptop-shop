@@ -171,4 +171,27 @@ class RoleController extends \Controller {
 
         $this->redirect($this->getBaseUrl() . '/admin/roles');
     }
+
+    /**
+     * Show role details
+     */
+    public function showRole() {
+        $roleId = $_GET['id'] ?? null;
+
+        if (!$roleId) {
+            $_SESSION['error'] = 'Role not found';
+            $this->redirect($this->getBaseUrl() . '/admin/roles');
+            return;
+        }
+
+        $role = $this->roleModel->getById($roleId);
+
+        if (!$role) {
+            $_SESSION['error'] = 'Role not found';
+            $this->redirect($this->getBaseUrl() . '/admin/roles');
+            return;
+        }
+
+        $this->loadView('admin/role/show.php', ['role' => $role]);
+    }
 }

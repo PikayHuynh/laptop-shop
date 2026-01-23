@@ -190,4 +190,28 @@ class UserController extends \Controller {
 
         $this->redirect($this->getBaseUrl() . '/admin/users');
     }
+
+    /**
+     * Show user details
+     */
+    public function userDetails() {
+        $userId = $_GET['id'] ?? null;
+
+        if (!$userId) {
+            $_SESSION['error'] = 'User not found';
+            $this->redirect($this->getBaseUrl() . '/admin/users');
+            return;
+        }
+
+        $user = $this->userModel->getById($userId);
+
+        if (!$user) {
+            $_SESSION['error'] = 'User not found';
+            $this->redirect($this->getBaseUrl() . '/admin/users');
+            return;
+        }
+
+        $roles = $this->roleModel->getAll();
+        $this->loadView('admin/user/show.php', ['user' => $user, 'roles' => $roles]);
+    }
 }

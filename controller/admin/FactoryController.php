@@ -178,4 +178,27 @@ class FactoryController extends \Controller {
 
         $this->redirect($this->getBaseUrl() . '/admin/factories');
     }
+
+    /**
+     * Show factory details
+     */
+    public function showFactory() {
+        $factoryId = $_GET['id'] ?? null;
+
+        if (!$factoryId) {
+            $_SESSION['error'] = 'Factory not found';
+            $this->redirect($this->getBaseUrl() . '/admin/factories');
+            return;
+        }
+
+        $factory = $this->factoryModel->getById($factoryId);
+
+        if (!$factory) {
+            $_SESSION['error'] = 'Factory not found';
+            $this->redirect($this->getBaseUrl() . '/admin/factories');
+            return;
+        }
+
+        $this->loadView('admin/factory/show.php', ['factory' => $factory]);
+    }
 }

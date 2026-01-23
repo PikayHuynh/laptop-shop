@@ -52,6 +52,7 @@ include __DIR__ . '/../layout/main-header.php';
                                 <td><?php echo $role['role_id']; ?></td>
                                 <td><?php echo htmlspecialchars($role['name']); ?></td>
                                 <td>
+                                    <a class="btn btn-outline-success m-2" href="<?php echo BASE_URL; ?>admin/show-role?id=<?php echo $role['role_id']; ?>">Show</a>
                                     <a class="btn btn-outline-warning m-2" href="<?php echo BASE_URL; ?>admin/edit-role?id=<?php echo $role['role_id']; ?>">Edit</a>
                                     <a class="btn btn-outline-danger m-2" href="<?php echo BASE_URL; ?>admin/delete-role?id=<?php echo $role['role_id'] ?>">Delete</a>
                                 </td>

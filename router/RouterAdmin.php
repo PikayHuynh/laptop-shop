@@ -11,6 +11,7 @@ class RouterAdmin {
         
         // User management routes
         $router->addRoute('admin/users', 'admin\UserController', 'listUsers');
+        $router->addRoute('admin/show-user','admin\UserController', 'userDetails');
         $router->addRoute('admin/add-user', 'admin\UserController', 'addUser');
         $router->addRoute('admin/create-user', 'admin\UserController', 'createUser');
         $router->addRoute('admin/edit-user', 'admin\UserController', 'editUser');
@@ -20,6 +21,7 @@ class RouterAdmin {
 
         // Factory management routes
         $router->addRoute('admin/factories', 'admin\FactoryController', 'listFactories');
+        $router->addRoute('admin/show-factory', 'admin\FactoryController', 'showFactory');
         $router->addRoute('admin/add-factory', 'admin\FactoryController', 'addFactory');
         $router->addRoute('admin/create-factory', 'admin\FactoryController', 'createFactory');
         $router->addRoute('admin/edit-factory', 'admin\FactoryController', 'editFactory');
@@ -29,6 +31,7 @@ class RouterAdmin {
 
         // Role management routes
         $router->addRoute('admin/roles', 'admin\RoleController', 'listRoles');
+        $router->addRoute('admin/show-role', 'admin\RoleController', 'showRole');
         $router->addRoute('admin/add-role', 'admin\RoleController', 'addRole');
         $router->addRoute('admin/create-role', 'admin\RoleController', 'createRole');
         $router->addRoute('admin/edit-role', 'admin\RoleController', 'editRole');
