@@ -37,5 +37,14 @@ class RouterAdmin {
         $router->addRoute('admin/edit-role', 'admin\RoleController', 'editRole');
         $router->addRoute('admin/update-role', 'admin\RoleController', 'updateRole');
         $router->addRoute('admin/delete-role', 'admin\RoleController', 'deleteRole');
+
+        // Category management routes
+        $router->addRoute('admin/categories', 'admin\CategoryController', 'listCategories');
+        $router->addRoute('admin/show-category', 'admin\CategoryController', 'showCategory');
+        $router->addRoute('admin/add-category', 'admin\CategoryController', 'addCategory');
+        $router->addRoute('admin/create-category', 'admin\CategoryController', 'createCategory');
+        $router->addRoute('admin/edit-category', 'admin\CategoryController', 'editCategory');
+        $router->addRoute('admin/update-category', 'admin\CategoryController', 'updateCategory');
+        $router->addRoute('admin/delete-category', 'admin\CategoryController', 'deleteCategory');
     }
 }
